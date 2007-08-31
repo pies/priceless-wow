@@ -1,0 +1,37 @@
+﻿## Interface: 20100
+## Title: Priceless
+## Notes: Shows additional item information in tooltips
+## Author: Tatko @ Ragnaros EU (tatarynowicz@gmail.com)
+## Version: 0.1
+## DefaultState: Enabled
+## OptionalDeps: Ace2, PeriodicTable, Auctioneer, ColaLight
+## X-Embeds: Ace2, PeriodicTable
+## X-Category: Interface Enhancements
+## X-License: Public Domain
+## X-Encoding: UTF-8
+
+Libs\AceLibrary.lua
+Libs\AceAddon-2.0.lua
+Libs\AceConsole-2.0.lua
+Libs\AceEvent-2.0.lua
+Libs\AceDebug-2.0.lua
+
+Libs\PeriodicTable-3.0.lua
+Libs\PeriodicTable-3.0-Tradeskill.lua
+Libs\PeriodicTable-3.0-TradeskillResultMats.lua
+
+main.lua
+util.lua
+player.lua
+links.lua
+
+Mods\mining.lua
+Mods\herbalism.lua
+Mods\skinning.lua
+
+Mods\reputation.lua
+Mods\notes.lua
+Mods\prices.lua
+Mods\trades.lua
+
+Mods\units.lua
