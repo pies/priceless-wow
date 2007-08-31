@@ -186,9 +186,9 @@ function Util:AsGold (price, rounded)
 	local G, S, C = Util:AsGSC(price)
 	local P = ''
 
-	if G > 0 then P = (G..''):gold() .. '.' end
+	if G > 0 then P = (G..' '):gold() end
 	if G > 0 and S < 10 then S = '0'..S end
-	P = P .. (S..''):silver() .. '.'
+	P = P .. (S..' '):silver()
 	if C < 10 then C = '0'..C end
 	P = P .. (C..''):copper()
 
