@@ -9,6 +9,7 @@
 ## X-Category: Interface Enhancements
 ## X-License: Public Domain
 ## X-Encoding: UTF-8
+## X-Website: http://code.google.com/p/priceless-wow/
 
 Libs\AceLibrary.lua
 Libs\AceOO-2.0.lua
