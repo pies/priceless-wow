@@ -15,7 +15,7 @@ function Prices:FromAuctioneer(link)
 
 	local L, Lc = Auctioneer.Statistic.GetItemSnapshotMedianBuyout(Ki, Ka);
 	local V     = Auctioneer.API.GetVendorSellPrice(Ki);
-	local P     = math.floor((A*Ac + L*Lc) / (Ac + Lc))
+	local P     = math.round(math.floor((A*Ac + L*Lc) / (Ac + Lc)), 100)
 
 	return P, A, Ac, L, Lc, V
 end
@@ -30,7 +30,7 @@ function Prices:OnTooltipSetItem(tooltip, name, id, link)
 	if P and P > 0 then Util:AddToTooltip('AH Price:', Util:AsGold (P, true)) end
 
 	local V = Prices:FromColaLight(link)
-	if V and V > 0 then Util:AddToTooltip('Vendor Price:', Util:AsGold (V, true)) end
+	if V and V > 0 then Util:AddToTooltip('Vendor Price:', Util:AsGold (V, false)) end
 end
 
 Priceless:AddMod('Prices', Prices)
