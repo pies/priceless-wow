@@ -144,7 +144,7 @@ function Priceless:OnTooltipSetSpell (TT)
 end
 
 function Priceless:OnTooltipUpdate (TT)
-	local TT = GameTooltip
+	local TT = TT or GameTooltip
 	local Name = GLOBAL[TT:GetName()..'TextLeft1']:GetText()
 	if Priceless.LastTooltip.Name == Name then return end
 	Priceless.LastTooltip = { Type = TOOLTIP_TYPE_OBJECT, Name = Name }
