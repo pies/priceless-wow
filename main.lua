@@ -92,8 +92,6 @@ function Priceless:OnEnable()
 	local info = string.format(" %s (%d), %s %s (%s)", P.Name, P.Level, P.Race, P.Class, P.Faction) -- Tatko (70), Tauren Druid (Horde)
 	self:Print(info)
 
-	self:AddMod('Various', Various)
-
 	self:HookScript(GameTooltip, 'OnTooltipSetItem',  self.OnTooltipSetItem)
 	self:HookScript(GameTooltip, 'OnTooltipSetUnit',  self.OnTooltipSetUnit)
 	self:HookScript(GameTooltip, 'OnTooltipSetSpell', self.OnTooltipSetSpell)
