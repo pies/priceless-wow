@@ -27,12 +27,12 @@ Items: various information, including lockpick skill needed to open lockboxes.
 
 = Prices =
 
-Items: Displays vendor and auction house sale prices using ColaLight (vendor prices) and Auctioneer (auction house prices). Those addons have to be downloaded separately.
+Items: Displays vendor and auction house sale prices using !ColaLight (vendor prices) and Auctioneer (auction house prices). Those addons have to be downloaded separately.
 
 = Reputation =
 
-Items: adds information about reputation gained for turning in particular reputation turn-ins (ie. Firewing Signet - Scryers: 25 reputation per item until honored)
+Items: adds information about reputation gained for turning in particular reputation turn-ins (ie. Firewing Signet - Scryers: 25 reputation per item until honored.)
 
 = Units =
 
-Units: adds reaction coloring to unit tooltips -- names mobs that will attack you are colored red
+Units: adds reaction coloring to unit tooltips -- names of aggressive mobs are colored red.
