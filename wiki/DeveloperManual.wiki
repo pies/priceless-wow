@@ -19,7 +19,7 @@ To create a hook add a method to your module object with one of the "magic" name
  * `Module:OnTooltipSetObject (tooltip, object_name)`
  * `Module:OnSkillChange (skill_name, skill_value)`
 
-Please keep in mind, that the `Module:OnTooltipSetObject()` hook is based on a hack &ndash; there is currently no "official" WoW API to find out when a tooltip is shown for an object (such as a mining node, herb, or a mailbox). Priceless keeps note of when the tooltip is shown for an item, unit or spell, along with its name. When tooltip is updated (specifically, when the first line, usually containing the name, changes), yet it's not for and item, unit or spell, it's assumed that it's shown for an object.
+Please keep in mind, that the `Module:OnTooltipSetObject()` hook is based on a hack -- there is currently no official WoW API to find out when a tooltip is shown for an object (such as a mining node, herb, or a mailbox). Priceless keeps note of when the tooltip is shown for an item, unit or spell, along with its name. When tooltip is updated (specifically, when the first line, usually containing the name, changes), yet it's not for and item, unit or spell, it's assumed that it's shown for an object.
 
 That means, however, that the hook is called for things like user interface elements, such as 'zoom in' and 'zoom out' minimap buttons. It's up to the module developer to match the name (tooltip's first line) or other tooltip contents with the list of game objects he wants to add information for.
 
@@ -30,4 +30,3 @@ To register a module with Priceless, call `Priceless:AddMod('Module Name', Modul
 = Helper Classes & Syntax Candy =
 
 There are two helper classes included with, and used troughout Priceless code. They are contained in files `util.lua` and `user.lua`. _(Todo: describe the helper classes.)_
-
