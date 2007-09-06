@@ -234,7 +234,7 @@ end
 function Code:OnSkillChange(name, value)
 	if name ~= 'Herbalism' then return end
 
-	for _, D in pairs(Data.Vein) do
+	for _, D in pairs(Data.Plant) do
 		local S = D.Skill
 		if S[1] == value then
 			local text = 'You can now pick '..D.Name..'.'
