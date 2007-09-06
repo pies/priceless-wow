@@ -156,6 +156,9 @@ math.round = function (amount, to)
 	return math.floor( (amount/to) + 0.5 ) * to
 end
 
+math.as_percent = function (amount, round_to)
+	return math.round(amount*100, round_to or 1) .. '%'
+end
 
 --[[ MONEY ]]--
 

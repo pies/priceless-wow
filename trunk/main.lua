@@ -9,6 +9,10 @@ Licence: Public Domain
 
 --[[ Libraries and constants ]]--
 
+local ADDON_VERSION = '2.0.0'
+local ADDON_REVISION = gsub("$Revision: $", "(%d+)", "%1") or '?'
+local ADDON_RELEASE_DATE = gsub("$Date: $", "^.-(%d%d%d%d%-%d%d%-%d%d).-$", "%1") or '?'
+
 local GLOBAL = getfenv(0)
 local _ -- /dev/null
 
@@ -68,8 +72,8 @@ end
 Priceless = AceLibrary("AceAddon-2.0"):new("AceConsole-2.0", "AceHook-2.1", "AceEvent-2.0", "AceDebug-2.0")
 
 Priceless.title = "Priceless"
-Priceless.version = "0.1.0 (r"..gsub("$Revision: $", "(%d+)", "%1")..")"
-Priceless.date = gsub("$Date: $", "^.-(%d%d%d%d%-%d%d%-%d%d).-$", "%1")
+Priceless.version = ADDON_VERSION .. " (r" .. ADDON_REVISION .. ")"
+Priceless.date = ADDON_RELEASE_DATE
 
 Priceless.Links = {}
 Priceless.Data  = {}
@@ -141,8 +145,8 @@ function Priceless:OnTooltipSetSpell (TT)
 	TT:Show()
 end
 
-function Priceless:OnTooltipUpdate (TT)
-	local TT = TT or GameTooltip
+function Priceless:OnTooltipUpdate (TT, TT2, TT3)
+	local TT = GameTooltip
 	local Name = GLOBAL[TT:GetName()..'TextLeft1']:GetText()
 	if Priceless.LastTooltip.Name == Name then return end
 	Priceless.LastTooltip = { Type = TOOLTIP_TYPE_OBJECT, Name = Name }
