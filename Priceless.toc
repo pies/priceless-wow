@@ -38,3 +38,4 @@ Mods\prices.lua
 Mods\trades.lua
 
 Mods\units.lua
+Mods\drops.lua
