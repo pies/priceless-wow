@@ -1,0 +1,1 @@
+Priceless is a World of Warcraft (WoW) addon developed by Michal Tatarynowicz (aka Tatko/Shesaws of RagnarosEU) that adds information to tooltips and chat messages. It's modular and aims to make it easy to create new modules with additional functionality.
