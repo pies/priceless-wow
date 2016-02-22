@@ -1,3 +1,6 @@
+# wow-priceless
+## Long defunct, kept for archival purposes. Do not use.
+
 Website: http://priceless-wow.googlecode.com/
 
 User Manual: http://code.google.com/p/priceless-wow/wiki/UserManual
